@@ -1,0 +1,40 @@
+# --- Material con copyright del juego: NUNCA subir ---
+*.bra
+*.wmv
+*.pac
+work/
+extracted/
+
+# --- Payload generado ---
+patch_files/*.bra
+patch_files_xdelta/
+patch_payload/
+build/
+*.exe
+!installer/**/*.exe   # (por si bundleas xdelta3.exe en el repo a propósito)
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Editor / SO ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+
+# Mantener placeholders
+!**/.gitkeep
+
+# === NO SUBIR A GITHUB (contienen datos del juego) ===
+patch_files/
+build/
+work/agent_out/
+work/slices01/
+work/dlcslices/
+work/dbslices/
+# patch_files_lite/ SI se puede publicar (solo diferencias VPatch + texto propio)
+_PRIVADO_NO_SUBIR/
